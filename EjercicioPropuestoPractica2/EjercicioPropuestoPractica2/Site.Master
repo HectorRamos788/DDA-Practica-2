@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EjercicioPropuestoPractica2.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UCSM SHOP</title>
+    <style type="text/css">
+        #Electro {
+            width: 122px;
+        }
+    </style>
+    </head>
+<body>
+    <body bgcolor="BDE7E8">
+    <form id="Form1" runat="server" method="POST">
+        <center>  
+        <div style="color: rebeccapurple;">
+        <h1>Zona de Electrodomesticos</h1>
+        Contamos con: &nbsp;
+         <select id="Electro" runat="server"/>
+        <br/>
+        <div style="font-weight:bold" id="Resultado" runat="server">
+            </select><br />
+            <br />
+        </div>
+            <br />
+            &nbsp;
+       <input type="submit" id="Convertir" runat="server" value="Buscar"
+         OnServerClick ="Convertir_ServerClick" />
+        <br/>
+        &nbsp;
+            <br />
+            <br />
+        <input type="submit" id="MostrarGrafico" runat="server" value="Imagen Referencial" OnServerClick ="MostrarGrafico_ServerClick" /><br />
+&nbsp;<br />
+            <br />
+            <br />
+            <br />
+            <br />
+        <img width="300" height="300" id="Grafico" runat="server" />
+    </div>
+            </center>  
+    </form>
+</body>
+</html>
+
