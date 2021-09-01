@@ -1,0 +1,27 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Site.master.vb" Inherits="ConversorDeTemperaturas.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Conversor de temperatura</title>
+  </head>
+ <body>
+     <form id="form1" runat="server">
+  <div>
+   <h1>Conversor de temperatura</h1>
+      Ingrese los grados en Fernheit:
+      <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    <br/>
+    <div style="font-weight:bold" id="Resultado" runat="server"></div>&nbsp;
+      Convertido a Celcius es:<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+      <br />
+&nbsp;Convertido a Kelvin es:<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+  </div>
+         <p>
+             <asp:Button ID="Button1" runat="server" Text="Convertir" />
+             <asp:Button ID="Button2" runat="server" Text="Limpiar" />
+             <asp:Button ID="Button3" runat="server" Text="Salir" />
+         </p>
+     </form>
+ </body>
+</html>
